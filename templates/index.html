@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">   
 </head>
 
 <body>
-
     <div class="container">
         <h1>Pokédex</h1>
+
         <div class="search-container">
             <input type="text" id="pokemon-name" placeholder="Entrez le nom d'un Pokémon">
             <button onclick="afficherPokedex()">Afficher</button>
         </div>
-        <div id="pokemon-info"></div>
 
- <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <div id="pokemon-info"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
